@@ -300,9 +300,9 @@ img{
 .team-social-icon:hover{
     background-color: var(--third-color);
 }
-/* .team-social-link:hover  .team-social-icon{
+.team-social-link:hover  .team-social-icon{
     fill: var(--header-background-color);
-} */
+}
 .team-social{
     display: flex;
     justify-content: center;
