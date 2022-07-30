@@ -38,7 +38,8 @@ ul,h1,h2,h3,p{
 }
 img{
     display: block;
-    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 .btn{
     cursor: pointer;
@@ -147,9 +148,24 @@ img{
         overflow: hidden;
     }
 .hero{
-    background-color: var(--secondary-background-color);
+    /* background-color: var(--secondary-background-color); */
     text-align: center;
-    padding: 200px 0;
+    /* padding: 200px 0; */
+    /* background-image: url(../images/hero-bg.png);
+        max-width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto; */
+}
+.hero-content{
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 1600px;
+        height: 600px;
+        /* margin-left: auto;
+        margin-right: auto; */
 }
 .hero-title{
         font-weight: 900;
@@ -181,6 +197,7 @@ img{
 /*---------FEATURES----------*/
 .page-section{
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 .features-title {
     font-weight: 700;
@@ -189,6 +206,7 @@ img{
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--first-color);
+        margin-bottom: 10px;
 }
 .features-text {
         font-size: 14px;
@@ -200,8 +218,8 @@ img{
     list-style: none;
     display: flex;
     gap: 30px;
-    align-items: center;
-    margin-bottom: 94px;
+    /* align-items: center;
+    margin-bottom: 94px; */
 }
 .features-item{
     flex-basis: calc((100% - 3 * 30px) / 4);
@@ -268,6 +286,30 @@ img{
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--second-color);
+        margin-bottom: 16px;
+}
+.team-social-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    background-color: var(--header-background-color)
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.team-social-icon:hover{
+    background-color: var(--third-color);
+}
+/* .team-social-link:hover  .team-social-icon{
+    fill: var(--header-background-color);
+} */
+.team-social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.team-social-icon{
+    fill: #AFB1B8;
 }
 .footer {
     background-color: var(--footer-background-color);
@@ -330,6 +372,7 @@ img{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
+    justify-content: center;
 }
 .portfolio-section-item {
     font-family: inherit;
