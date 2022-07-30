@@ -291,8 +291,8 @@ img{
 .team-social-link{
     width: 44px;
     height: 44px;
-    border-radius: 44px;
-    background-color: var(--header-background-color)
+    border-radius: 50%;
+    background-color: tomato;
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -306,7 +306,7 @@ img{
 .team-social{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 .team-social-icon{
     fill: #AFB1B8;
