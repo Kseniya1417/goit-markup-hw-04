@@ -231,6 +231,7 @@ img{
     list-style: none;
     display: flex;
     gap: 30px;
+    margin-bottom: 30px;
     /* align-items: center;
     margin-bottom: 94px; */
 }
@@ -374,6 +375,39 @@ img{
 }
 .team-social-icon{
     fill: #AFB1B8;
+}
+.client-title{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding-top: 94px;
+        padding-bottom: 50px;
+}
+.client-list{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 94px;
+}
+.client-item{
+    width: 170px;
+    height: 92px;
+    outline: 1px solid #AFB1B8;
+   background-position: center;
+   padding: 16px 32px;
+}
+.client1,
+.client2,
+.client3,
+.client4,
+.client5,
+.client6{
+       fill: #AFB1B8;
 }
 .footer {
     background-color: var(--footer-background-color);
