@@ -401,6 +401,39 @@ img{
    background-position: center;
    padding: 16px 32px;
 }
+.client-item:hover,
+.client-item:focus{
+    outline: 1px solid var(--third-color);
+}
+.client-link:hover .client1,
+.client-link:focus .client1{
+    fill:var(--third-color);
+}
+.client-link:hover .client2,
+.client-link:focus .client2 {
+    fill: var(--third-color);
+}
+.client-link:hover .client3,
+.client-link:focus .client3 {
+    fill: var(--third-color);
+}
+.client-link:hover .client4,
+.client-link:focus .client4 {
+    fill: var(--third-color);
+}
+.client-link:hover .client5,
+.client-link:focus .client5 {
+    fill: var(--third-color);
+}
+.client-link:hover .client6,
+.client-link:focus .client6 {
+    fill: var(--third-color);
+}
+.client-item:hover,
+.client-item:focus{
+    fill:var(--third-color);
+}
+.client-item
 .client1,
 .client2,
 .client3,
