@@ -126,8 +126,20 @@ img{
 .contacts-tel:focus {
     color: var(--third-color);
 }
+.contacts-post::before{
+    background-image: url("../images/envelop.svg");
+    background-size: 20px;
+}
 .container-border{
     border-bottom: 1px solid #ECECEC;
+}
+.icon-envelope{
+    margin-right: 10px;
+    fill: currentColor;
+}
+.icon-telephone{
+    margin-right: 10px;
+    fill: currentColor;
 }
 /*------------HERO-----------*/
 .hero-title{
@@ -164,6 +176,7 @@ img{
         background-size: cover;
         max-width: 1600px;
         height: 600px;
+        padding-top: 200px;
         /* margin-left: auto;
         margin-right: auto; */
 }
@@ -224,6 +237,33 @@ img{
 .features-item{
     flex-basis: calc((100% - 3 * 30px) / 4);
 }
+.features-item::before{
+    display: block;
+    background-color: var(--section-team-baskground-color);
+    content: '';
+    /* width: 270px; */
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+.icon-antenna::before{
+    background-image: url("../images/antenna2.svg");
+    background-size: 70px 65px;
+}
+.icon-clock::before {
+    background-image: url("../images/clock.svg");
+    background-size: 70px 65px;
+}
+.icon-diagram::before {
+    background-image: url("../images/diagram.svg");
+    background-size: 70px 65px;
+}
+.icon-astronaut::before {
+    background-image: url("../images/astronaut.svg");
+    background-size: 70px 65px;
+}
 /*---------SECTION-WORK---------*/
 .section-work{
     padding-bottom: 94px;
@@ -279,7 +319,7 @@ img{
     }
 .team-box{
     padding: 30px 0;
-  
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .section-team-text{
         line-height: 1.18;
@@ -292,16 +332,40 @@ img{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: tomato;
+    background-color: var(--header-background-color);
     display: flex;
     align-items: center; 
     justify-content: center;
 }
-.team-social-icon:hover{
+/* .team-social-icon:hover{
     background-color: var(--third-color);
-}
-.team-social-link:hover  .team-social-icon{
+} */
+.team-social-link:hover .team-icon-instagram,
+.team-social-link:focus .team-icon-instagram{
     fill: var(--header-background-color);
+}
+.team-social-link:hover .team-icon-twitter,
+.team-social-link:focus .team-icon-twitter{
+    fill: var(--header-background-color);
+}
+.team-social-link:hover .team-icon-facebook,
+.team-social-link:focus .team-icon-facebook{
+    fill: var(--header-background-color);
+}
+.team-social-link:hover .team-icon-linkedin,
+.team-social-link:focus .team-icon-linkedin{
+    fill: var(--header-background-color);
+}
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: var(--third-color);
+    fill: var(--header-background-color) ;
+}
+.team-icon-instagram,
+.team-icon-twitter,
+.team-icon-facebook,
+.team-icon-linkedin{
+    fill: #AFB1B8;
 }
 .team-social{
     display: flex;
@@ -361,6 +425,25 @@ img{
         letter-spacing: 0.03em;
         color: var(--footer-link-color);
 }
+.footer .container{
+    display: flex;
+}
+.footer-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    margin-left: 156px;
+    margin-bottom: 20px;
+    padding-top: 12px;
+}
+.footer-cocial-list{
+    margin-left: 156px;
+}
 /*---------PORTFOLIO---------*/
 .portfolio-section{
     padding: 94px 0;
@@ -398,6 +481,7 @@ img{
 .portfolio-section-item-btn:focus {
     color: var(--main-btn-text-color);
     background-color: var(--main-btn-background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .section-item{
     list-style: none;
@@ -413,6 +497,9 @@ img{
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
         overflow: hidden;
+}
+.card-item:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .card-set{
     margin: -15px;
