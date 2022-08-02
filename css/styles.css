@@ -252,18 +252,22 @@ img{
 .icon-antenna::before{
     background-image: url("../images/antenna2.svg");
     background-size: 70px 65px;
+    margin-bottom: 30px;
 }
 .icon-clock::before {
     background-image: url("../images/clock.svg");
     background-size: 70px 65px;
+    margin-bottom: 30px;
 }
 .icon-diagram::before {
     background-image: url("../images/diagram.svg");
     background-size: 70px 65px;
+    margin-bottom: 30px;
 }
 .icon-astronaut::before {
     background-image: url("../images/astronaut.svg");
     background-size: 70px 65px;
+    margin-bottom: 30px;
 }
 /*---------SECTION-WORK---------*/
 .section-work{
@@ -329,6 +333,15 @@ img{
         color: var(--second-color);
         margin-bottom: 16px;
 }
+/* .team-dark-social-item{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.1);
+} */
 .team-social-link{
     width: 44px;
     height: 44px;
@@ -338,14 +351,28 @@ img{
     align-items: center; 
     justify-content: center;
 }
+.footer-social-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 /* .team-social-icon:hover{
     background-color: var(--third-color);
 } */
-.team-social-link:hover .team-icon-instagram,
-.team-social-link:focus .team-icon-instagram{
+.team-social-link:hover .team-icon-svg,
+.team-social-link:focus .team-icon-svg{
     fill: var(--header-background-color);
 }
-.team-social-link:hover .team-icon-twitter,
+.footer-social-link:hover .team-icon-svg,
+.footer-social-link:focus .team-icon-svg {
+    fill: var(--header-background-color);
+}
+/* .team-social-link:hover .team-icon-twitter,
 .team-social-link:focus .team-icon-twitter{
     fill: var(--header-background-color);
 }
@@ -356,16 +383,18 @@ img{
 .team-social-link:hover .team-icon-linkedin,
 .team-social-link:focus .team-icon-linkedin{
     fill: var(--header-background-color);
-}
+} */
 .team-social-link:hover,
 .team-social-link:focus {
     background-color: var(--third-color);
     fill: var(--header-background-color) ;
 }
-.team-icon-instagram,
-.team-icon-twitter,
-.team-icon-facebook,
-.team-icon-linkedin{
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--third-color);
+    fill: var(--header-background-color);
+}
+.team-icon-svg{
     fill: #AFB1B8;
 }
 .team-social{
@@ -373,9 +402,10 @@ img{
     justify-content: center;
     gap: 10px;
 }
-.team-social-icon{
+/* .team-social-icon{
     fill: #AFB1B8;
-}
+} */
+/*----------CLIENTS----------*/
 .client-title{
     font-family: 'Roboto';
         font-style: normal;
@@ -510,6 +540,9 @@ img{
 }
 .footer-cocial-list{
     margin-left: 156px;
+}
+.team-dark-social-item{
+
 }
 /*---------PORTFOLIO---------*/
 .portfolio-section{
