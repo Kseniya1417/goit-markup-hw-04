@@ -111,13 +111,17 @@ img{
 }
 /*---------CONTACTS---------*/
 .contacts-tel, .contacts-post {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--second-color);
+    align-items: center;
 }
 .nav-contacts-post, .nav-contacts-tel{
-   padding: 32px 0;
+    display: flex;
+    padding: 32px 0;
+    align-items: center;
 }
 
 .contacts-post:hover,
@@ -174,9 +178,10 @@ img{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        max-width: 1600px;
+        max-width: 1200px;
         height: 600px;
-        padding-top: 200px;
+        padding: 200px 0;
+        margin: 0 auto;
         /* margin-left: auto;
         margin-right: auto; */
 }
@@ -207,6 +212,9 @@ img{
     background-color:var(--studio-hover-color);
     color: var(--main-btn-text-color);
 }
+.hero-btn-center{
+    text-align: center;
+}
 /*---------FEATURES----------*/
 .page-section{
     padding-top: 94px;
@@ -231,7 +239,6 @@ img{
     list-style: none;
     display: flex;
     gap: 30px;
-    margin-bottom: 30px;
     /* align-items: center;
     margin-bottom: 94px; */
 }
@@ -406,6 +413,9 @@ img{
     fill: #AFB1B8;
 } */
 /*----------CLIENTS----------*/
+.client{
+    padding: 94px 0;
+}
 .client-title{
     font-family: 'Roboto';
         font-style: normal;
@@ -414,22 +424,22 @@ img{
         line-height: 42px;
         text-align: center;
         letter-spacing: 0.03em;
-        padding-top: 94px;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
 }
 .client-list{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 94px;
 }
 .client-item{
     width: 170px;
     height: 92px;
-    outline: 1px solid #AFB1B8;
-   background-position: center;
-   padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* background-position: center; */
 }
 .client-item:hover,
 .client-item:focus{
@@ -534,12 +544,14 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-color);
-    margin-left: 156px;
     margin-bottom: 20px;
     padding-top: 12px;
 }
-.footer-cocial-list{
-    margin-left: 156px;
+.footer-add-social{
+    margin-left: 70px;
+}
+.footer-icon-svg{
+    fill:var(--header-background-color)
 }
 .team-dark-social-item{
 
@@ -552,8 +564,6 @@ img{
     list-style: none;
     display: flex;
     gap: 8px;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 50px;
     justify-content: center;
 }
@@ -598,8 +608,12 @@ img{
         clip: rect(0 0 0 0);
         overflow: hidden;
 }
-.card-item:hover{
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.portfolio-link{
+    display: block;
 }
 .card-set{
     margin: -15px;
