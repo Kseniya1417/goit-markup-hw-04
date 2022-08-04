@@ -614,6 +614,7 @@ img{
 }
 .portfolio-link{
     display: block;
+    outline: none;
 }
 .card-set{
     margin: -15px;
