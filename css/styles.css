@@ -570,7 +570,7 @@ img{
 .portfolio-section-item {
     font-family: inherit;
     font-weight: 500;
-        line-height: 1.62;
+         line-height: 1.62;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--secondary-btn-text-color);
@@ -620,9 +620,13 @@ img{
     display: flex;
     flex-wrap: wrap;
    }
+.card-set{
+    outline: none;
+}
 .card-set > .card-item{
     margin: 15px;
     flex-basis: calc(100% / 3 - 30px);
+    
 }
 .portfolio-text-box{
     padding: 20px 24px;
